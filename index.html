@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SPARTSPRO — поставки лифтового оборудования, комплектующих и запчастей для лифтов и эскалаторов.">
+  <title>SPARTSPRO — лифтовое оборудование</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/dist/main.min.css">
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══════════════════════════════════════════════════ -->
+  <header class="header" role="banner">
+
+    <!-- Top contacts bar -->
+    <div class="header__topbar">
+      <div class="container header__topbar-inner">
+
+        <span class="header__contact-item">
+          <svg class="header__contact-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M8 1.5C5.515 1.5 3.5 3.515 3.5 6c0 3.75 4.5 8.5 4.5 8.5S12.5 9.75 12.5 6c0-2.485-2.015-4.5-4.5-4.5zm0 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="#272a33"/>
+          </svg>
+          г. Москва
+        </span>
+
+        <a href="mailto:info@spartspro.ru" class="header__contact-item header__contact-item--accent">
+          <svg class="header__contact-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M2 4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4zm1 0v.511l5 3.124 5-3.124V4H3zm10 1.489-5 3.124-5-3.124V12h10V5.489z" fill="#ee753e"/>
+          </svg>
+          info@spartspro.ru
+        </a>
+
+        <a href="tel:+74951478363" class="header__contact-item">
+          <svg class="header__contact-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z" fill="#272a33"/>
+          </svg>
+          +7 (495) 147-83-63
+        </a>
+
+        <a href="#" class="header__contact-item header__contact-item--accent">
+          Обратный звонок
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Main nav -->
+    <div class="header__main">
+      <div class="container header__main-inner">
+
+        <a href="/" class="header__logo" aria-label="SPARTSPRO — на главную">
+          <img
+            src="img/logo.png"
+            alt="SPARTSPRO"
+            class="header__logo-img"
+            width="204"
+            height="49"
+            fetchpriority="high"
+          >
+        </a>
+
+        <nav class="header__nav" aria-label="Основная навигация">
+          <a href="#" class="header__nav-link">Главная</a>
+          <a href="#" class="header__nav-link header__nav-link--dropdown">Каталог</a>
+          <a href="#about" class="header__nav-link">О компании</a>
+          <a href="#" class="header__nav-link">Оплата и доставка</a>
+          <a href="#" class="header__nav-link">Контакты</a>
+        </nav>
+
+        <button
+          class="header__burger"
+          id="burgerBtn"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="burgerMenu"
+        >
+          <span class="header__burger-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ MOBILE BURGER MENU ════════════════════════════════════════ -->
+  <div
+    class="burger-menu"
+    id="burgerMenu"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Мобильное меню"
+    hidden
+  >
+
+    <div class="burger-menu__header">
+      <a href="/" aria-label="SPARTSPRO — на главную">
+        <img src="img/logo.png" alt="SPARTSPRO" class="burger-menu__logo-img" width="160" height="38">
+      </a>
+      <button class="burger-menu__close" id="burgerClose" aria-label="Закрыть меню">&#x2715;</button>
+    </div>
+
+    <nav class="burger-menu__nav" aria-label="Мобильная навигация">
+      <a href="#" class="burger-menu__link">Главная</a>
+      <a href="#" class="burger-menu__link">Каталог</a>
+      <a href="#about" class="burger-menu__link">О компании</a>
+      <a href="#" class="burger-menu__link">Оплата и доставка</a>
+      <a href="#" class="burger-menu__link">Контакты</a>
+    </nav>
+
+  </div>
+
+  <!-- ═══ MAIN CONTENT ══════════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ── Products section ──────────────────────────────────────── -->
+    <section class="section products" aria-labelledby="products-title">
+      <div class="container container--mid">
+
+        <div class="products__head">
+          <div class="products__head-left">
+            <h1 class="section__title" id="products-title">Рекомендуемое оборудование</h1>
+            <p class="section__subtitle products__subtitle">Ознакомьтесь с нашей продукцией</p>
+          </div>
+          <a href="#" class="btn">Смотреть каталог</a>
+        </div>
+
+        <div class="products__grid">
+
+          <article class="card">
+            <div class="card__pic">
+              <img
+                class="card__img"
+                src="img/products/product-1.jpg"
+                alt="Стальной канат для лифта GRS 9X21F(9Х17)-IWRC 1570"
+                width="220"
+                height="220"
+                loading="lazy"
+              >
+            </div>
+            <div class="card__content">
+              <h2 class="card__title">Стальной канат для лифта GRS 9X21F(9Х17)-IWRC 1570</h2>
+              <div class="card__status">
+                <span class="card__dot" aria-hidden="true"></span>
+                В наличии 50 м.
+              </div>
+              <a href="#" class="card__btn btn">Подробнее</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__pic">
+              <img
+                class="card__img"
+                src="img/products/product-2.jpg"
+                alt="Купить плоский тяговый ремень для лифта GRS AAA717AJ1 (8 кордов)"
+                width="220"
+                height="220"
+                loading="lazy"
+              >
+            </div>
+            <div class="card__content">
+              <h2 class="card__title">Купить плоский тяговый ремень для лифта GRS AAA717AJ1 (8 кордов)</h2>
+              <div class="card__status card__status--order">
+                <span class="card__dot" aria-hidden="true"></span>
+                Под заказ
+              </div>
+              <a href="#" class="card__btn btn">Подробнее</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__pic">
+              <img
+                class="card__img"
+                src="img/products/product-3.jpg"
+                alt="Стальной канат для лифта GRS 8X19S-NFC 1570"
+                width="220"
+                height="220"
+                loading="lazy"
+              >
+            </div>
+            <div class="card__content">
+              <h2 class="card__title">Стальной канат для лифта GRS 8X19S-NFC 1570</h2>
+              <div class="card__status">
+                <span class="card__dot" aria-hidden="true"></span>
+                В наличии 50 м.
+              </div>
+              <a href="#" class="card__btn btn">Подробнее</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__pic">
+              <img
+                class="card__img"
+                src="img/products/product-4.jpg"
+                alt="Стальной канат для лифта GRS 9X21F(9Х17)-IWRC 1570"
+                width="220"
+                height="220"
+                loading="lazy"
+              >
+            </div>
+            <div class="card__content">
+              <h2 class="card__title">Стальной канат для лифта GRS 9X21F(9Х17)-IWRC 1570</h2>
+              <div class="card__status">
+                <span class="card__dot" aria-hidden="true"></span>
+                В наличии 10 м.
+              </div>
+              <a href="#" class="card__btn btn">Подробнее</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__pic">
+              <img
+                class="card__img"
+                src="img/products/product-5.jpg"
+                alt="Стальной канат для лифта GRS 8X19W-CWC 1570"
+                width="220"
+                height="220"
+                loading="lazy"
+              >
+            </div>
+            <div class="card__content">
+              <h2 class="card__title">Стальной канат для лифта GRS 8X19W-CWC 1570</h2>
+              <div class="card__status">
+                <span class="card__dot" aria-hidden="true"></span>
+                В наличии 30 м.
+              </div>
+              <a href="#" class="card__btn btn">Подробнее</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__pic">
+              <img
+                class="card__img"
+                src="img/products/product-6.jpg"
+                alt="Купить плоский тяговый ремень для лифта GRS AAA717AJ1 (8 кордов)"
+                width="220"
+                height="220"
+                loading="lazy"
+              >
+            </div>
+            <div class="card__content">
+              <h2 class="card__title">Купить плоский тяговый ремень для лифта GRS AAA717AJ1 (8 кордов)</h2>
+              <div class="card__status">
+                <span class="card__dot" aria-hidden="true"></span>
+                В наличии 30 м.
+              </div>
+              <a href="#" class="card__btn btn">Подробнее</a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="products__footer">
+          <a href="#" class="btn btn--outline">Перейти в каталог</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── About section ─────────────────────────────────────────── -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container container--mid">
+
+        <h2 class="about__title" id="about-title">О компании</h2>
+
+        <div class="about__inner">
+
+          <div class="about__gallery">
+            <img
+              class="about__img about__img--main"
+              src="img/about/about-main.jpg"
+              alt="Производство лифтового оборудования SPARTSPRO"
+              width="705"
+              height="202"
+              loading="lazy"
+            >
+            <div class="about__row">
+              <img
+                class="about__img about__img--sm"
+                src="img/about/about-sm1.jpg"
+                alt="Склад комплектующих"
+                width="335"
+                height="162"
+                loading="lazy"
+              >
+              <img
+                class="about__img about__img--sm"
+                src="img/about/about-sm2.jpg"
+                alt="Монтаж оборудования"
+                width="337"
+                height="162"
+                loading="lazy"
+              >
+            </div>
+          </div>
+
+          <div class="about__content">
+            <p class="about__lead">
+              Компания «SPARTSPRO» специализируется на поставках лифтового оборудования,
+              комплектующих и запчастей для лифтов и эскалаторов ведущих мировых и российских
+              производителей.
+            </p>
+
+            <ul class="about__list" aria-label="Преимущества компании">
+              <li class="about__item">
+                <span class="about__item-icon" aria-hidden="true"></span>
+                Гарантия качества – работаем только с проверенными производителями.
+              </li>
+              <li class="about__item">
+                <span class="about__item-icon" aria-hidden="true"></span>
+                Собственный склад – более 30 000 наименований в наличии для оперативных отгрузок.
+              </li>
+              <li class="about__item">
+                <span class="about__item-icon" aria-hidden="true"></span>
+                Соблюдение сроков – приоритет компании: быстрая обработка заказов и доставка без задержек.
+              </li>
+            </ul>
+
+            <p class="about__text">
+              Мы обеспечиваем бесперебойные поставки для ваших проектов.
+              Оставьте заявку – и получите коммерческое предложение в кратчайшие сроки!
+            </p>
+
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/burger.js" defer></script>
+</body>
+</html>

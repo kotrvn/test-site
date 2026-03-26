@@ -1,0 +1,32 @@
+:root {
+  --color-accent: #ee753e;
+  --color-dark: #272a33;
+  --color-header-top: #eef3f8;
+  --color-bg-image: #ececec;
+  --color-in-stock: #4fcf35;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-nav-drop: #e4e4e4;
+  --color-divider: #d9d9d9;
+  --color-text-muted: #9f9f9f;
+
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
+
+  --radius-card: 20px;
+  --radius-card-sm: 8px;
+  --radius-btn: 10px;
+
+  --container-max: 1440px;
+  --container-mid: 1160px;
+  --container-pad: 40px;
+
+  --header-top-h: 40px;
+  --header-main-h: 80px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-pad: 16px;
+  }
+}

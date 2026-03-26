@@ -1,0 +1,16 @@
+{
+  "name": "test-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "postcss css/main.css -o css/dist/main.min.css",
+    "watch:css": "postcss css/main.css -o css/dist/main.min.css --watch"
+  },
+  "devDependencies": {
+    "cssnano": "^7.0.6",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "postcss-preset-env": "^10.1.3"
+  }
+}
