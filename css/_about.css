@@ -49,7 +49,6 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background-color: var(--color-bg-image);
   border-radius: var(--radius-card-sm);
   overflow: hidden;
   padding: 0;
