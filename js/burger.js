@@ -8,6 +8,8 @@
   if (!btn || !menu || !closeBtn) return;
 
   function openMenu() {
+    var scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.paddingRight = scrollbarWidth + 'px';
     menu.hidden = false;
     menu.classList.add('burger-menu--open');
     btn.setAttribute('aria-expanded', 'true');
@@ -19,6 +21,7 @@
     menu.classList.remove('burger-menu--open');
     btn.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
+    document.body.style.paddingRight = '';
     setTimeout(function () {
       menu.hidden = true;
     }, 300);
