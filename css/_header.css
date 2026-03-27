@@ -72,6 +72,7 @@
 .header__logo-img {
   height: 49px;
   width: auto;
+  max-width: 204px;
   object-fit: contain;
 }
 
@@ -181,6 +182,7 @@
 .burger-menu__logo-img {
   height: 49px;
   width: auto;
+  max-width: 204px;
   object-fit: contain;
 }
 
