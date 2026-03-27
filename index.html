@@ -8,8 +8,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"></noscript>
 
+  <link rel="preload" as="image" href="img/products/product-1.webp" type="image/webp">
   <link rel="stylesheet" href="css/dist/main.min.css">
 </head>
 <body>
@@ -54,14 +56,17 @@
       <div class="container header__main-inner">
 
         <a href="/" class="header__logo" aria-label="SPARTSPRO — на главную">
-          <img
-            src="img/logo.png"
-            alt="SPARTSPRO"
-            class="header__logo-img"
-            width="204"
-            height="49"
-            fetchpriority="high"
-          >
+          <picture>
+            <source srcset="img/logo.webp" type="image/webp">
+            <img
+              src="img/logo.png"
+              alt="SPARTSPRO"
+              class="header__logo-img"
+              width="204"
+              height="49"
+              fetchpriority="high"
+            >
+          </picture>
         </a>
 
         <nav class="header__nav" aria-label="Основная навигация">
@@ -102,7 +107,10 @@
 
     <div class="burger-menu__header">
       <a href="/" aria-label="SPARTSPRO — на главную">
-        <img src="img/logo.png" alt="SPARTSPRO" class="burger-menu__logo-img" width="160" height="38">
+        <picture>
+          <source srcset="img/logo.webp" type="image/webp">
+          <img src="img/logo.png" alt="SPARTSPRO" class="burger-menu__logo-img" width="160" height="38">
+        </picture>
       </a>
       <button class="burger-menu__close" id="burgerClose" aria-label="Закрыть меню">&#x2715;</button>
     </div>
@@ -136,14 +144,17 @@
 
           <article class="card">
             <div class="card__pic">
-              <img
-                class="card__img"
-                src="img/products/product-1.jpg"
-                alt="Стальной канат для лифта GRS 9X21F(9Х17)-IWRC 1570"
-                width="220"
-                height="220"
-                loading="lazy"
-              >
+              <picture>
+                <source srcset="img/products/product-1.webp" type="image/webp">
+                <img
+                  class="card__img"
+                  src="img/products/product-1.jpg"
+                  alt="Стальной канат для лифта GRS 9X21F(9Х17)-IWRC 1570"
+                  width="220"
+                  height="220"
+                  fetchpriority="high"
+                >
+              </picture>
             </div>
             <div class="card__content">
               <h2 class="card__title">Стальной канат для лифта GRS 9X21F(9Х17)-IWRC 1570</h2>
@@ -157,14 +168,17 @@
 
           <article class="card">
             <div class="card__pic">
-              <img
-                class="card__img"
-                src="img/products/product-2.jpg"
-                alt="Купить плоский тяговый ремень для лифта GRS AAA717AJ1 (8 кордов)"
-                width="220"
-                height="220"
-                loading="lazy"
-              >
+              <picture>
+                <source srcset="img/products/product-2.webp" type="image/webp">
+                <img
+                  class="card__img"
+                  src="img/products/product-2.jpg"
+                  alt="Купить плоский тяговый ремень для лифта GRS AAA717AJ1 (8 кордов)"
+                  width="220"
+                  height="220"
+                  loading="lazy"
+                >
+              </picture>
             </div>
             <div class="card__content">
               <h2 class="card__title">Купить плоский тяговый ремень для лифта GRS AAA717AJ1 (8 кордов)</h2>
@@ -178,14 +192,17 @@
 
           <article class="card">
             <div class="card__pic">
-              <img
-                class="card__img"
-                src="img/products/product-3.jpg"
-                alt="Стальной канат для лифта GRS 8X19S-NFC 1570"
-                width="220"
-                height="220"
-                loading="lazy"
-              >
+              <picture>
+                <source srcset="img/products/product-3.webp" type="image/webp">
+                <img
+                  class="card__img"
+                  src="img/products/product-3.jpg"
+                  alt="Стальной канат для лифта GRS 8X19S-NFC 1570"
+                  width="220"
+                  height="220"
+                  loading="lazy"
+                >
+              </picture>
             </div>
             <div class="card__content">
               <h2 class="card__title">Стальной канат для лифта GRS 8X19S-NFC 1570</h2>
@@ -199,14 +216,17 @@
 
           <article class="card">
             <div class="card__pic">
-              <img
-                class="card__img"
-                src="img/products/product-4.jpg"
-                alt="Стальной канат для лифта GRS 9X21F(9Х17)-IWRC 1570"
-                width="220"
-                height="220"
-                loading="lazy"
-              >
+              <picture>
+                <source srcset="img/products/product-4.webp" type="image/webp">
+                <img
+                  class="card__img"
+                  src="img/products/product-4.jpg"
+                  alt="Стальной канат для лифта GRS 9X21F(9Х17)-IWRC 1570"
+                  width="220"
+                  height="220"
+                  loading="lazy"
+                >
+              </picture>
             </div>
             <div class="card__content">
               <h2 class="card__title">Стальной канат для лифта GRS 9X21F(9Х17)-IWRC 1570</h2>
@@ -220,14 +240,17 @@
 
           <article class="card">
             <div class="card__pic">
-              <img
-                class="card__img"
-                src="img/products/product-5.jpg"
-                alt="Стальной канат для лифта GRS 8X19W-CWC 1570"
-                width="220"
-                height="220"
-                loading="lazy"
-              >
+              <picture>
+                <source srcset="img/products/product-5.webp" type="image/webp">
+                <img
+                  class="card__img"
+                  src="img/products/product-5.jpg"
+                  alt="Стальной канат для лифта GRS 8X19W-CWC 1570"
+                  width="220"
+                  height="220"
+                  loading="lazy"
+                >
+              </picture>
             </div>
             <div class="card__content">
               <h2 class="card__title">Стальной канат для лифта GRS 8X19W-CWC 1570</h2>
@@ -241,14 +264,17 @@
 
           <article class="card">
             <div class="card__pic">
-              <img
-                class="card__img"
-                src="img/products/product-6.jpg"
-                alt="Купить плоский тяговый ремень для лифта GRS AAA717AJ1 (8 кордов)"
-                width="220"
-                height="220"
-                loading="lazy"
-              >
+              <picture>
+                <source srcset="img/products/product-6.webp" type="image/webp">
+                <img
+                  class="card__img"
+                  src="img/products/product-6.jpg"
+                  alt="Купить плоский тяговый ремень для лифта GRS AAA717AJ1 (8 кордов)"
+                  width="220"
+                  height="220"
+                  loading="lazy"
+                >
+              </picture>
             </div>
             <div class="card__content">
               <h2 class="card__title">Купить плоский тяговый ремень для лифта GRS AAA717AJ1 (8 кордов)</h2>
@@ -269,7 +295,6 @@
       </div>
     </section>
 
-    <!-- ── About section ─────────────────────────────────────────── -->
     <section class="section" id="about" aria-labelledby="about-title">
       <div class="container container--mid">
 
@@ -278,31 +303,40 @@
         <div class="about__inner">
 
           <div class="about__gallery">
-            <img
-              class="about__img about__img--main"
-              src="img/about/about-main.jpg"
-              alt="Производство лифтового оборудования SPARTSPRO"
-              width="705"
-              height="202"
-              loading="lazy"
-            >
+            <picture>
+              <source srcset="img/about/about-main.webp" type="image/webp">
+              <img
+                class="about__img about__img--main"
+                src="img/about/about-main.jpg"
+                alt="Производство лифтового оборудования SPARTSPRO"
+                width="705"
+                height="202"
+                loading="lazy"
+              >
+            </picture>
             <div class="about__row">
-              <img
-                class="about__img about__img--sm"
-                src="img/about/about-sm1.jpg"
-                alt="Склад комплектующих"
-                width="335"
-                height="162"
-                loading="lazy"
-              >
-              <img
-                class="about__img about__img--sm"
-                src="img/about/about-sm2.jpg"
-                alt="Монтаж оборудования"
-                width="337"
-                height="162"
-                loading="lazy"
-              >
+              <picture>
+                <source srcset="img/about/about-sm1.webp" type="image/webp">
+                <img
+                  class="about__img about__img--sm"
+                  src="img/about/about-sm1.jpg"
+                  alt="Склад комплектующих"
+                  width="335"
+                  height="162"
+                  loading="lazy"
+                >
+              </picture>
+              <picture>
+                <source srcset="img/about/about-sm2.webp" type="image/webp">
+                <img
+                  class="about__img about__img--sm"
+                  src="img/about/about-sm2.jpg"
+                  alt="Монтаж оборудования"
+                  width="337"
+                  height="162"
+                  loading="lazy"
+                >
+              </picture>
             </div>
           </div>
 
